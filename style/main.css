@@ -457,6 +457,9 @@ nav .close_ {
   nav .ul_nav > li .anc_nav i {
     font-size: 11px;
   }
+  header {
+    margin-bottom: 10px;
+  }
   header .input_div_parant {
     display: none;
   }
