@@ -19,7 +19,7 @@
   margin-bottom: 10px;
   text-transform: capitalize;
   @include en {
-    font-size: $font_s + 2;
+    font-size: 14px;
   }
   }
   .feat_p{
@@ -43,7 +43,7 @@ text-align: center;
   
   }
   .feat_p{
-text-align: center;
+    text-align: center;
   }
   }
 }
@@ -56,6 +56,11 @@ text-align: center;
   margin-bottom: 20px;
   >i{
     margin-bottom: 5px;
+  }
+  .feat_p{
+    @include en{
+      font-size: 13px;
+    }
   }
   }
 }
