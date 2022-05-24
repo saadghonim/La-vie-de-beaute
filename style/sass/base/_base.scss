@@ -54,7 +54,6 @@ body {
 .over_ {
   overflow: hidden;
 }
-
 ::-webkit-scrollbar {
   width: 5px;
   height: 0px;
@@ -62,29 +61,6 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: $color_2;
-}
-
-.title_sections {
-  position: relative;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-  .t_section {
-    font-size: 27px;
-    font-family: "Tajawal";
-    color: $main_color;
-    font-weight: 700;
-    text-transform: capitalize;
-  }
-  img {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-  }
 }
 
 .anim_:hover::after {

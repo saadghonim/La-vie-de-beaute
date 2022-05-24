@@ -998,38 +998,6 @@ body {
   background: #c69b2f;
 }
 
-.title_sections {
-  position: relative;
-  height: 72px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 40px;
-}
-
-.title_sections .t_section {
-  font-size: 27px;
-  font-family: "Tajawal";
-  color: #254321;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-
-.title_sections img {
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-}
-
 .anim_:hover::after {
   content: "";
   position: absolute;
