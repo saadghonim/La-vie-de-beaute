@@ -386,7 +386,7 @@ nav {
     background-color: $color_2!important;
     color: $main_color;
     &::after{
-      color: $main_color ;
+      color: $color_1 ;
     }
   }
   &::after{
