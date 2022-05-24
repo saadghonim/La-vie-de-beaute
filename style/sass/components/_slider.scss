@@ -1,0 +1,30 @@
+.slider_parant {
+  position: relative;
+  .slider {
+    margin-bottom: 30px;
+    img {
+      max-width: 100%;
+    }
+    @include owl-nav_;
+    @include dots_;
+    .owl-dots {
+      display: block;
+      bottom: 30px;
+    }
+  }
+}
+
+@include xs {
+  .slider_parant {
+    .slider {
+    margin-bottom: 40px;
+      .owl-nav {
+        display: none;
+      }
+      .owl-dots {
+        display: block;
+        bottom: 10px;
+      }
+    }
+  }
+}

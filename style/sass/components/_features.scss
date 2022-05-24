@@ -1,0 +1,61 @@
+
+.features{
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.feat_div{
+  display: flex;
+  align-items: center;
+  >i{
+  font-size: 48px;
+  color: $color_2;
+  margin-inline-end: 20px;
+  }
+  .feat_title{
+  font-size: 15px;
+  font-weight: 700;
+  color: $main_color;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  @include en {
+    font-size: $font_s + 2;
+  }
+  }
+  .feat_p{
+    font-size: 14px;
+    color: #737373;
+    font-weight: 400;
+  }
+  
+}
+
+
+@include sm {
+  .feat_div{
+flex-direction: column;
+  >i{
+    margin-inline-end: 0px;
+    margin-bottom: 15px;
+  }
+  .feat_title{
+text-align: center;
+  
+  }
+  .feat_p{
+text-align: center;
+  }
+  }
+}
+@include xs {
+  .features{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  }
+  .feat_div{
+  margin-bottom: 20px;
+  >i{
+    margin-bottom: 5px;
+  }
+  }
+}

@@ -1,0 +1,52 @@
+.categories_secition{
+  margin-bottom: 100px;
+}
+.categories{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  .anc_categories{
+    transition: .5s;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #093203;
+    &:hover{
+      color: $color_2;
+    figure{
+      border-color: $color_2;
+      img{
+        transform: scale(1.1) rotate(5deg);
+      }
+    }
+    }
+    figure{
+      margin-bottom: 15px;
+      border: 2px solid transparent;
+      transition: .5s;
+      overflow: hidden;
+      img{
+        max-width: 100%;
+        transition: .5s;
+      }
+    }
+  }
+}
+
+
+@include sm{
+  .categories{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+@include xs{
+  .categories{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .categories_secition{
+    margin-bottom: 20px;
+  }
+}

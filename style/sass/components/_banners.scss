@@ -1,0 +1,62 @@
+.banner_parant {
+  margin-bottom: 20px;
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    .anc_banner {
+      overflow: hidden!important;
+      position: relative!important;
+      display: block;
+      transition: 0.5s;
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+      &:before {
+        border: 50px solid transparent;
+        border-radius: 50px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-block;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        content: "";
+        opacity: 1;
+        filter: alpha(opacity=100);
+        width: 100px;
+        height: 100px;
+        transform: scale(7);
+        transition: all 0.4s ease-in-out 0s;
+        visibility: visible;
+        z-index: 1;
+      }
+      &:hover {
+        &:before {
+          border: 0 solid rgba(255, 255, 255, 0.7);
+          opacity: 0.9;
+          -webkit-filter: alpha(opacity=0);
+          filter: alpha(opacity=0);
+        }
+      }
+    }
+  }
+}
+
+@include xs {
+
+  .banner_parant {
+    margin-bottom: 40px;
+    .banner {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+
+}

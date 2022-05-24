@@ -1,0 +1,33 @@
+.ul_drop {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  z-index: 0;
+  background-color: $color_1;
+  padding: 15px;
+  transition: 0.5s;
+  min-width: 140px;
+  box-shadow: 0px 0px 7px 0px #0000001a;
+  top: 28px;
+  .anc_drop {
+    font-size: 14px;
+    color: #3b5638;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+    @include ar{
+      font-size: 14px;
+    }
+    &:hover {
+      color: $color_2;
+    }
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  @include xs{
+    min-width: 130px;
+  }
+}
