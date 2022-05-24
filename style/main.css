@@ -1363,6 +1363,9 @@ html[dir="ltr"] .slider_parant .slider .owl-nav button.owl-next {
         grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+  .categories .anc_categories figure {
+    margin-bottom: 5px;
+  }
   .categories_secition {
     margin-bottom: 20px;
   }
