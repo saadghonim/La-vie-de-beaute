@@ -249,60 +249,7 @@ nav {
 .toggle_ {
   transform: rotate(-90deg);
 }
-@include xs {
-  .header_parant {
-    .header {
-      .btn_mob {
-        display: flex;
-      }
 
-      .user_div {
-        .btn_icon {
-          width: 18px;
-          height: auto;
-          &:hover {
-            color: $color_3;
-          }
-          .ul_drop {
-            top: 35px;
-            transform: inherit;
-            @include ar {
-              left: -40px;
-            }
-            @include en {
-              right: -40px;
-            }
-            &::after {
-              left: 33%;
-            }
-          }
-          p {
-            display: none;
-          }
-        }
-        width: 50%;
-        .ul_drop {
-          // transform: translate(none);
-
-          @include en {
-            left: -86px;
-            &::after {
-              left: 65%;
-            }
-          }
-        }
-        .div_user {
-          &::after {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-  .user_div {
-    margin: 0;
-  }
-}
 @include xs {
   nav {
     position: absolute;

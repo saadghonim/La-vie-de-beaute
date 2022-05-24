@@ -336,53 +336,6 @@ nav .close_ {
 }
 
 @media only screen and (max-width: 767px) {
-  .header_parant .header .btn_mob {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header_parant .header .user_div {
-    width: 50%;
-  }
-  .header_parant .header .user_div .btn_icon {
-    width: 18px;
-    height: auto;
-  }
-  .header_parant .header .user_div .btn_icon:hover {
-    color: #a6892c;
-  }
-  .header_parant .header .user_div .btn_icon .ul_drop {
-    top: 35px;
-    -webkit-transform: inherit;
-            transform: inherit;
-  }
-  html[dir="rtl"] .header_parant .header .user_div .btn_icon .ul_drop {
-    left: -40px;
-  }
-  html[dir="ltr"] .header_parant .header .user_div .btn_icon .ul_drop {
-    right: -40px;
-  }
-  .header_parant .header .user_div .btn_icon .ul_drop::after {
-    left: 33%;
-  }
-  .header_parant .header .user_div .btn_icon p {
-    display: none;
-  }
-  html[dir="ltr"] .header_parant .header .user_div .ul_drop {
-    left: -86px;
-  }
-  html[dir="ltr"] .header_parant .header .user_div .ul_drop::after {
-    left: 65%;
-  }
-  .header_parant .header .user_div .div_user::after {
-    display: none;
-  }
-  .user_div {
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 767px) {
   nav {
     position: absolute;
     top: 0;
